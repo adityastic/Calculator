@@ -1,8 +1,7 @@
 package com.aditya.calculator.datas;
 
 import android.content.Context;
-import android.support.v4.content.ContextCompat;
-import android.util.Log;
+import androidx.core.content.ContextCompat;
 
 import com.aditya.calculator.R;
 
