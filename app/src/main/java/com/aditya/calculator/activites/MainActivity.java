@@ -12,7 +12,7 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import com.aditya.calculator.R;
-import com.aditya.calculator.datas.ColorText;
+import com.aditya.calculator.data.ColorText;
 
 import static android.text.Spanned.SPAN_INCLUSIVE_INCLUSIVE;
 

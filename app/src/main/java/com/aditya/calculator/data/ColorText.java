@@ -1,4 +1,4 @@
-package com.aditya.calculator.datas;
+package com.aditya.calculator.data;
 
 import android.content.Context;
 import androidx.core.content.ContextCompat;
