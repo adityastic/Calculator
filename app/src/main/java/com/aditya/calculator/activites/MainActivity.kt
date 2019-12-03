@@ -1,5 +1,6 @@
 package com.aditya.calculator.activites
 
+import android.os.Build
 import android.os.Bundle
 import android.text.Html
 import android.text.SpannableString
@@ -40,7 +41,11 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
     }
 
     private fun setUpperText(text: String?) {
-        ans.text = Html.fromHtml(text, Html.FROM_HTML_MODE_LEGACY)
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
+            ans.text = Html.fromHtml(text, Html.FROM_HTML_MODE_LEGACY)
+        }else{
+            ans.text = Html.fromHtml(text)
+        }
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
