@@ -7,9 +7,9 @@ import androidx.appcompat.widget.AppCompatButton
 import kotlin.math.min
 
 class SquareButton : AppCompatButton {
-    constructor(context: Context?) : super(context)
-    constructor(context: Context?, attrs: AttributeSet?) : super(context, attrs)
-    constructor(context: Context?, attrs: AttributeSet?, defStyle: Int) : super(context, attrs, defStyle)
+    constructor(context: Context) : super(context)
+    constructor(context: Context, attrs: AttributeSet?) : super(context, attrs)
+    constructor(context: Context, attrs: AttributeSet?, defStyle: Int) : super(context, attrs, defStyle)
 
     override fun onMeasure(widthMeasureSpec: Int, heightMeasureSpec: Int) {
         val measuredWidth = View.getDefaultSize(suggestedMinimumWidth,
